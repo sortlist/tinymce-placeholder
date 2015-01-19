@@ -29,7 +29,7 @@ tinymce.PluginManager.add('placeholder', function(editor) {
 
         tinymce.DOM.setStyle(this.contentAreaContainer, 'position', 'relative');
 
-        attrs = {style: {position: 'absolute', top:0, left:0, color: '#888', padding: '10px'} };
+        attrs = {style: {position: 'absolute', top:'5px', left:0, color: '#888', padding: '1%', width:'98%', overflow: 'hidden'} };
         this.el = tinymce.DOM.add( this.contentAreaContainer, "label", attrs, this.text );
     }
 
