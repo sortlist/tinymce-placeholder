@@ -24,7 +24,7 @@ tinymce.PluginManager.add('placeholder', function(editor) {
 
     var Label = function(){
         // Create label el
-        this.text = editor.getElement().getAttribute("placeholder");
+        this.text = editor.getElement().getAttribute("placeholder") || editor.settings.placeholder;
         this.contentAreaContainer = editor.getContentAreaContainer();
 
         tinymce.DOM.setStyle(this.contentAreaContainer, 'position', 'relative');

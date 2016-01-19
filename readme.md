@@ -8,5 +8,5 @@ Usage
 
 * Add the plugin script to the page
 * Add "placeholder" to tinymce config plugins array.
-* Add a placeholder attribute to the textarea as usual.
+* Add a placeholder attribute to the textarea as usual or set placeholder property in editor settings.
 * Enjoy!
