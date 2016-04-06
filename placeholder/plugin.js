@@ -7,6 +7,7 @@ tinymce.PluginManager.add('placeholder', function(editor) {
         tinymce.DOM.bind(label.el, 'click', onFocus);
         editor.on('focus', onFocus);
         editor.on('blur', onBlur);
+        editor.on('change', onBlur);
 
         function onFocus(){
             label.hide();
