@@ -12,7 +12,7 @@ Usage
 
 Installation with bower
 -------
-To install plugin unsing bower use comand <code>bower install tinymce-placeholder-attribute</code>
+To install plugin using bower use command <code>bower install tinymce-placeholder-attribute</code>
 
 Example
 -------
