@@ -10,6 +10,10 @@ Usage
 * Add "placeholder" to tinymce config plugins array.
 * Add a placeholder attribute to the textarea as usual.
 
+Installation with bower
+-------
+To install plugin using bower use command <code>bower install tinymce-placeholder-attribute</code>
+
 Example
 -------
 
