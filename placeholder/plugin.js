@@ -1,7 +1,7 @@
 tinymce.PluginManager.add('placeholder', function(editor) {
     editor.on('init', function() {
         var label = new Label;
-        
+
         onBlur();
 
         tinymce.DOM.bind(label.el, 'click', onFocus);
