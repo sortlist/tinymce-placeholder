@@ -9,6 +9,12 @@
       plugins: [ "placeholder" ],
       toolbar: false //"undo redo"
   });
+  tinymce.init({
+      selector: "div.tinymce",
+      plugins: [ "placeholder" ],
+      placeholder:'placeholder set  in editor.settings',
+      toolbar: false //"undo redo"
+  });
   </script>
 </head>
 <body>
@@ -18,6 +24,8 @@
   <textarea class="tinymce" placeholder="This is a test placeholder...">This is an editor with text</textarea>
   <h2>Editor without placeholder attribute</h2>
   <textarea class="tinymce"></textarea>
+  <h2>Editor placeholder set in editor.settings</h2>
+  <div class="tinymce"></div>
   <h2>Empty Editor Long Placeholder</h2>
   <textarea class="tinymce" placeholder="This is a test placeholder. Very very very very very very very very very very very very very very very very very long placeholdedr."></textarea>
 </body>
