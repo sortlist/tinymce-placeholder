@@ -24,14 +24,14 @@ tinymce.PluginManager.add('placeholder', function(editor) {
     });
 
     var Label = function(){
+        var placeholder_text = editor.getElement().getAttribute("placeholder") || editor.settings.placeholder;
+        var placeholder_attrs = editor.settings.placeholder_attrs || {style: {position: 'absolute', top:'5px', left:0, color: '#888', padding: '1%', width:'98%', overflow: 'hidden'} };
+        var contentAreaContainer = editor.getContentAreaContainer();
+
+        tinymce.DOM.setStyle(contentAreaContainer, 'position', 'relative');
+
         // Create label el
-        this.text = editor.getElement().getAttribute("placeholder") || editor.settings.placeholder;
-        this.contentAreaContainer = editor.getContentAreaContainer();
-
-        tinymce.DOM.setStyle(this.contentAreaContainer, 'position', 'relative');
-
-        attrs = {style: {position: 'absolute', top:'5px', left:0, color: '#888', padding: '1%', width:'98%', overflow: 'hidden'} };
-        this.el = tinymce.DOM.add( this.contentAreaContainer, "label", attrs, this.text );
+        this.el = tinymce.DOM.add( contentAreaContainer, "label", placeholder_attrs, placeholder_text );
     }
 
     Label.prototype.hide = function(){
