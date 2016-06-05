@@ -12,7 +12,7 @@ tinymce.PluginManager.add('placeholder', function(editor) {
 
         function onFocus(){
             label.hide();
-            tinyMCE.execCommand('mceFocus', false, editor);
+            editor.execCommand('mceFocus', false);
         }
 
         function onBlur(){
