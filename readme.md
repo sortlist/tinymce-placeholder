@@ -10,6 +10,8 @@ Usage
 * Add "placeholder" to tinymce config plugins array.
 * Add a placeholder attribute to the textarea as usual or set placeholder property in editor settings.
 
+Note: This plugin is not compatible with TinyMCE inline mode. It only works in classic mode.
+
 Installation with bower
 -------
 To install plugin using bower use command <code>bower install tinymce-placeholder-attribute</code>
