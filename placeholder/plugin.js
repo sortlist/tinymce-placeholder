@@ -11,7 +11,9 @@ tinymce.PluginManager.add('placeholder', function(editor) {
         editor.on('setContent', onBlur);
 
         function onFocus(){
-            label.hide();
+            if(!editor.settings.readonly === true){
+                label.hide();
+            }
             editor.execCommand('mceFocus', false);
         }
 
